@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT (code) / CC-BY-4.0 (3D model and texture, see CREDITS.md)"
+
+[[mods]]
+modId="labrador_puppy"
+version="@version@"
+displayName="Labrador Puppy"
+authors="You"
+description='''
+Adds an animated Labrador Retriever puppy entity (idle + walk).
+Model: "Labrador Retriever puppy" by #3D $Resource$ (lopuh22721), CC BY 4.0.
+'''
+
+[[dependencies.labrador_puppy]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.labrador_puppy]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
