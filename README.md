@@ -15,6 +15,16 @@ Requires **JDK 17**. Forge **1.20.1-47.3.0** (ForgeGradle 6, official Mojang map
 
 Then: `./gradlew runClient` (test) or `./gradlew build` (jar in `build/libs/`).
 
+## Building the jar on Windows (step by step)
+1. Install **JDK 17** (e.g. Temurin) and **Gradle 8.8** (or open the folder in IntelliJ IDEA).
+2. In the project folder run: `gradle wrapper --gradle-version 8.8` then `gradlew.bat build`.
+3. The mod jar is `build\libs\labrador-puppy-forge-1.20.1-1.0.0.jar`  (NOT the zip, NOT `-sources`).
+4. Verify it: `python tools/check_jar.py build/libs/labrador-puppy-forge-1.20.1-1.0.0.jar`
+5. Put only that jar in the `mods` folder of a **Forge 1.20.1** profile. It does not need
+   Connector or Fabric API.
+
+If you have no local Gradle, push the folder to GitHub: the *build* workflow produces the jar as an artifact.
+
 ## In game
 * `/summon labrador_puppy:puppy`
 * Creative inventory -> Spawn Eggs -> *Labrador Puppy Spawn Egg*
